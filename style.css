@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000; /* fallback only */
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  display: block;
+}
+
+/* Overlay (Start / Crash UI) */
+#overlay {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 16px 18px;
+  border-radius: 10px;
+  z-index: 10;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  min-width: 200px;
+}
+
+#overlay h1 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #2e5e3e; /* subtle garden green */
+}
+
+#overlay p {
+  margin: 6px 0 12px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#overlay button {
+  padding: 8px 14px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #2e8b57;
+  color: #fff;
+}
+
+#overlay button:hover {
+  background: #256f46;
+}
