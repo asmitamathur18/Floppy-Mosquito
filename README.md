@@ -2,6 +2,8 @@
 
 Floppy Mosquito is a browser-based arcade game inspired by classic one-button endless runner games. The player controls a mosquito and navigates through moving obstacles using tap or click inputs.
 
+The game includes a revive mechanic that allows players to continue gameplay after collisions, adding an extra challenge and strategy element.
+
 The project demonstrates core front-end concepts such as animation loops, collision detection, event handling, and game state management using vanilla web technologies.
 
 🚀 Live Demo
@@ -14,19 +16,24 @@ The project demonstrates core front-end concepts such as animation loops, collis
 • Mosquito movement follows gravity-based physics
 • Obstacles continuously generate during gameplay
 • Score increases as player successfully avoids obstacles
-• Game ends when mosquito collides with obstacle
+• Player is provided 3 revive chances after collisions
+• Revive indicators are displayed on the left side of the screen
+• Game ends when all revive chances are exhausted
 
 🕹️ Controls
 
 • Click or tap to make mosquito move upward
 • Avoid obstacles to increase score
+• Game continues automatically if revive chances remain
 
 ✨ Features
 
 ✔ Single-input gameplay (click / tap)
+✔ Gravity-based movement mechanics
 ✔ Real-time collision detection
+✔ 3 revive system with visual revive indicators
+✔ Score tracking displayed during gameplay
 ✔ Continuous obstacle generation
-✔ Score tracking system
 ✔ Responsive browser gameplay
 ✔ Lightweight and fast loading
 
@@ -41,12 +48,14 @@ JavaScript (Vanilla)
 • Animation loops using requestAnimationFrame
 • Gravity-based movement simulation
 • Collision detection logic
+• Revive state management
 • Event-driven input handling
-• Game state and score management
+• Score and gameplay state tracking
 
 📚 Learning Outcomes
 
 • Implemented physics-inspired animation logic
+• Designed revive-based gameplay mechanics
 • Strengthened event handling techniques
 • Learned obstacle generation algorithms
 • Improved understanding of browser-based game architecture
@@ -72,3 +81,4 @@ Open index.html in any browser.
 • Mobile touch optimization
 • Persistent leaderboard using localStorage
 • Animated sprites and improved visuals
+
